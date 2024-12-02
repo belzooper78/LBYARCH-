@@ -139,9 +139,6 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">asmfunc.obj</Outputs>
     </CustomBuild>
   </ItemGroup>
-  <ItemGroup>
-    <Text Include="inputs.txt" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
