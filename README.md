@@ -57,4 +57,102 @@ Performance Analysis
 
 ![image](https://github.com/user-attachments/assets/60042093-24d8-486a-9e66-7ca6cfb5a377)
 
+n = 2^20
+1.2ms 
+2.2ms
+3.2ms
+4.3ms
+5.2ms
+6.2ms
+7.2ms
+8.3ms
+9.2ms
+10.3ms
+11.3ms
+12.2ms
+13.3ms
+14.2ms
+15.3ms
+16.2ms
+17.2ms
+18.3ms
+19.3ms
+20.2ms
+21.2ms
+22.3ms
+23.2ms
+24.2ms
+25.2ms
+26.3ms
+27.3ms
+28.3ms
+29.3ms
+30.2ms
+average = 2.433ms
+
+n = 2^24
+49ms
+42ms
+46ms
+41ms
+44ms
+42ms
+43ms
+45ms
+44ms
+38ms
+41ms
+45ms
+43ms
+50ms
+40ms
+46ms
+52ms
+44ms
+48ms
+45ms
+40ms
+42ms
+47ms
+49ms
+49ms
+54ms
+45ms
+48ms
+51ms
+44ms
+average = 45.23ms
+
+n = 2^28
+955ms
+669ms
+1085ms
+1022ms
+596ms
+593ms
+896ms
+901ms
+633ms
+934ms
+966ms
+617ms
+630ms
+712ms
+865ms
+897ms
+637ms
+884ms
+659ms
+951ms
+1123ms
+789ms
+928ms
+612ms
+848ms
+740ms
+974ms
+998ms
+597ms
+838ms
+average = 818.3 ms
 
