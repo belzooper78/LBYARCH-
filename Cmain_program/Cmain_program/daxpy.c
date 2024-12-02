@@ -11,7 +11,7 @@ void daxpy_c(long n, double A, double* X, double* Y, double* Z) {
 }
 
 int main() {
-
+    //CLOCK 
     clock_t start, end;
     double time_for_C;
 
@@ -28,11 +28,12 @@ int main() {
 
     for (long i = 0; i < n; i++) {
         X[i] = (double)(rand() % 1000) / 10.0; 
-        Y[i] = (double)(rand() % 1000) / 10.0; 
+        Y[i] = (double)(rand() % 1000) / 10.0;
     }
 
+    //CLOCK
     start = clock();
-    daxpy_asm(n, A, X, Y, Z);  
+    daxpy_asm(n, A, X, Y, Z); 
     end = clock();
     time_for_C = ((double)(end - start)) / CLOCKS_PER_SEC * 1000;
 
