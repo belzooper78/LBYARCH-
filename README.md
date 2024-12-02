@@ -1,4 +1,4 @@
-# LBYARCH-MP2
+![image](https://github.com/user-attachments/assets/6ae70b59-12bb-448c-891c-56e32acf4164)# LBYARCH-MP2
 By Nico Diego and Ryan Villanueva
 
 DAXPY Kernel Project (C and x86-64 Assembly)
@@ -54,3 +54,7 @@ gcc main_program.c daxpy.o asmfunc.o -o daxpy -m64
 
 
 Performance Analysis
+
+![image](https://github.com/user-attachments/assets/60042093-24d8-486a-9e66-7ca6cfb5a377)
+
+
