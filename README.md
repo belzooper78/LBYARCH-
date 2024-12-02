@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/6ae70b59-12bb-448c-891c-56e32acf4164)# LBYARCH-MP2
+# LBYARCH-MP2
 By Nico Diego and Ryan Villanueva
 
 DAXPY Kernel Project (C and x86-64 Assembly)
