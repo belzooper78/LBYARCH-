@@ -8,33 +8,33 @@ daxpy_asm:
     push rbx
     push r12
 
-    sub rsp, 8               ; Align the stack (ensure 16-byte alignment)
+    sub rsp, 8               
     
-    mov r12, rdi             ; r12 = N (number of elements)
-    mov rdi, rsi             ; rdi = scalar a
-    mov rsi, rdx             ; rsi = pointer to array X
-    mov rdx, rcx             ; rdx = pointer to array Y
-    mov rcx, r8              ; rcx = pointer to array Z
+    mov r12, rdi            
+    mov rdi, rsi            
+    mov rsi, rdx          
+    mov rdx, rcx            
+    mov rcx, r8              
 
-    xor rbx, rbx             ; rbx = loop index (i = 0)
+    xor rbx, rbx            
 
 .loop:
-    cmp rbx, r12             ; Compare i with N
-    jge .end_loop            ; Exit if i >= N
+    cmp rbx, r12             
+    jge .end_loop            
     
-    movsd xmm0, [rsi + rbx * 8] ; Load X[i] into xmm0
-    movsd xmm1, [rdx + rbx * 8] ; Load Y[i] into xmm1
+    movsd xmm0, [rsi + rbx * 8] 
+    movsd xmm1, [rdx + rbx * 8] 
     
-    mulsd xmm0, xmm0         ; xmm0 = a * X[i]
-    addsd xmm0, xmm1         ; xmm0 = (a * X[i]) + Y[i]
+    mulsd xmm0, xmm0        
+    addsd xmm0, xmm1         
     
-    movsd [rcx + rbx * 8], xmm0 ; Store the result in Z[i]
+    movsd [rcx + rbx * 8], xmm0 
     
-    inc rbx                  ; i++
+    inc rbx                  
     jmp .loop
 
 .end_loop:
-    add rsp, 8               ; Restore stack alignment
+    add rsp, 8              
     pop r12
     pop rbx
     ret
